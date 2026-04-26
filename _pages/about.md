@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Incoming M.A.Sc. student at Queen's — federated learning over wireless networks
+subtitle: Incoming M.A.Sc. student at Queen's University
 email_personal: akmolmasud5@gmail.com
 
 profile:
