@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - masud1901
 
 repo_description_lines_max: 2
 
+# Add/remove lines here to control exactly what appears on /repositories/.
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - masud1901/fed-dqn-tsr
+  - masud1901/Multi-Layered-Password-Based-Steganography
+  - masud1901/MosQNet-SA
+  - masud1901/Dream-Sleep-Apnea
+  - masud1901/Sensitivity-Guided-Quantum-Machine-Unlearning
+  - masud1901/Privacy-Robustness-Bound-aggrigation

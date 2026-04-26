@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+date: 2026-04-08 17:27:00+0000
+inline: false
 related_posts: false
+title: MosQNet-SA published in PLOS ONE
 ---
 
-A simple inline announcement.
+Our paper **MosQNet-SA** — an explainable convolutional-attention model for mosquito species classification with an integrated RESTful API for real-time disease risk mapping — was published in [PLOS ONE](https://doi.org/10.1371/journal.pone.0344970) (publication date **8 April 2026**, per journal metadata).
