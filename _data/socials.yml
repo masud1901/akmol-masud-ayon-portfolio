@@ -11,8 +11,8 @@ inspirehep_id: 2839153
 rss_icon: true # comment this line to hide the RSS icon
 github_username: masud1901
 website:
-  logo: https://ayon.nimbusrb.com/favicon.ico
+  logo: fa-solid fa-globe
   title: Website
-  url: https://ayon.nimbusrb.com/
+  url: https://akmolmasud5.com/
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
