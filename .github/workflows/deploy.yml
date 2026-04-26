@@ -6,6 +6,7 @@ on:
       - master
       - main
     paths:
+      - "CNAME"
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
@@ -35,6 +36,7 @@ on:
       - master
       - main
     paths:
+      - "CNAME"
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
@@ -102,4 +104,5 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: gh-pages # GitHub Pages source must be branch gh-pages (see README / fix instructions)
           folder: _site
