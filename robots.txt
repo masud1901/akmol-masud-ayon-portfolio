@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://alshedivat.github.io/al-folio/sitemap.xml
+Sitemap: https://masud1901.github.io/akmol-masud-ayon-portfolio/sitemap.xml
