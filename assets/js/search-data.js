@@ -562,7 +562,7 @@ ninja.data = [{
         title: 'Website',
         section: 'Socials',
         handler: () => {
-          window.open("https://akmolmasud5.com/", "_blank");
+          window.open("https://www.akmolmasud5.com/", "_blank");
         },
       },{
       id: 'light-theme',

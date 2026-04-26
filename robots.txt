@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://akmolmasud5.com/sitemap.xml
+Sitemap: https://www.akmolmasud5.com/sitemap.xml
