@@ -118,10 +118,17 @@
             {% endif %}
           {% endfor %}
           {% if site.search_enabled %}
-            <!-- Search -->
+            <!-- Search (shortcut: Ctrl+K / ⌘K — see openSearchModal in search-setup.js) -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+              <button
+                id="search-toggle"
+                type="button"
+                class="nav-link btn btn-link border-0 p-2 text-body"
+                title="Search (Ctrl+K or ⌘K)"
+                aria-label="Open search"
+                onclick="openSearchModal()"
+              >
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
               </button>
             </li>
           {% endif %}

@@ -13,6 +13,10 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+### Manuscripts under review / in preparation
+
+*None listed publicly at the moment.*
+
 <div class="publications">
 
 {% bibliography %}

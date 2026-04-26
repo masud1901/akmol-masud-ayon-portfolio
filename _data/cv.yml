@@ -147,7 +147,7 @@ cv:
       - name: Systems & Tools
         level: Proficient
         icon: fa-solid fa-server
-        keywords: "Docker, Git, Linux, LaTeX, Jupyter"
+        keywords: "Docker, Git, Linux, LaTeX, Jupyter, Weights & Biases, Hugging Face Hub"
 
     Languages:
       - name: Bengali

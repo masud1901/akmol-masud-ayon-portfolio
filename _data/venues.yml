@@ -1,3 +1,15 @@
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#1a3a5c"
+
+"PLOS ONE":
+  url: https://journals.plos.org/plosone/
+  color: "#3d348b"
+
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"

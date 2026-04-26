@@ -55,12 +55,15 @@
     display: none;
   }
 
-  .only-light {
+  /* GitHub stats / trophy images: show exactly one variant (fixes both widgets visible). */
+  .only-light,
+  img.only-light {
     display: block;
   }
 
-  .only-dark {
-    display: none;
+  .only-dark,
+  img.only-dark {
+    display: none !important;
   }
 
   #back-to-top {
@@ -112,12 +115,14 @@ html[data-theme="dark"] {
   --global-danger-block-text: #ffb9b9;
   --global-danger-block-title: #ffe0e0;
 
-  .only-light {
-    display: none;
+  .only-light,
+  img.only-light {
+    display: none !important;
   }
 
-  .only-dark {
-    display: block;
+  .only-dark,
+  img.only-dark {
+    display: block !important;
   }
 }
 
