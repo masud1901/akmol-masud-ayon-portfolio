@@ -25,17 +25,17 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum vitae of Md Akmol Masud — incoming M.A.Sc. student in ECE at Queen&#39;s University working on federated learning, distributed optimization, and privacy-preserving machine learning.",
+          description: "Curriculum vitae of Md Akmol Masud — federated and split learning, distributed optimization, and privacy-preserving machine learning (ECE, Queen&#39;s University).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-bookshelf",
-          title: "bookshelf",
-          description: "",
+        },{id: "nav-hobbies",
+          title: "Hobbies",
+          description: "Music, Spotify, and reading outside research.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/books/";
+            window.location.href = "/hobbies/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -400,17 +400,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-crime-and-punishment",
-          title: 'Crime and Punishment',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/crime_and_punishment/";
-            },},{id: "books-dune",
-          title: 'Dune',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/dune/";
-            },},{id: "news-presented-steganography-work-at-ecce-2025-cuet",
+      },{id: "news-presented-steganography-work-at-ecce-2025-cuet",
           title: 'Presented steganography work at ECCE 2025 (CUET)',
           description: "",
           section: "News",handler: () => {
@@ -426,8 +416,8 @@ ninja.data = [{
             },},{id: "news-our-paper-quantum-rationale-aware-graph-contrastive-learning-for-jet-discrimination-was-published-in-transactions-on-machine-learning-research-tmlr-february-2026-issue-openreview-arxiv-2411-01642",
           title: 'Our paper Quantum Rationale-Aware Graph Contrastive Learning for Jet Discrimination was published in...',
           description: "",
-          section: "News",},{id: "news-joining-queen-39-s-university-as-m-a-sc-student",
-          title: 'Joining Queen&amp;#39;s University as M.A.Sc. student',
+          section: "News",},{id: "news-admitted-to-queen-39-s-m-a-sc-ece-wireless-federated-learning-with-dr-ning-lu",
+          title: 'Admitted to Queen&amp;#39;s M.A.Sc. (ECE) — wireless federated learning with Dr. Ning Lu...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
