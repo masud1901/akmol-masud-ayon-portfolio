@@ -1,0 +1,20 @@
+# Hobbies page (/hobbies/) — fill these in, then rebuild the site.
+#
+# YouTube: video ids only (from youtube.com/watch?v=THIS). Shown in a small 2-column grid.
+youtube_video_ids:
+  - esMRZlkd0EE
+  - U5hAk9W7xLQ
+  - Hj7M6UQDFj4
+  - Ow59OrdhIR4
+
+# Spotify: the album id only (from open.spotify.com/album/THIS_PART).
+spotify_album_id: "6uvStslIkv1Rjli2WSk1PE"
+
+# Goodreads: numeric user id from your profile URL (…/user/show/THIS_NUMBER-username).
+goodreads_user_id: "200543795"
+# Optional: link to your public profile (shown above the widgets).
+goodreads_profile_url: "https://www.goodreads.com/user/show/200543795-akmol-masud"
+# “See more” target — full read shelf on Goodreads.
+goodreads_read_shelf_url: "https://www.goodreads.com/review/list/200543795-akmol-masud?shelf=read"
+# How many covers to preview in a horizontal row (rest via “See more”).
+goodreads_read_count: 6

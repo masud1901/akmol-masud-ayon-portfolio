@@ -1,0 +1,74 @@
+{% assign h = site.data.hobbies %}
+{% assign yt_ids = h.youtube_video_ids %}
+{% if yt_ids == nil or yt_ids.size == 0 %}
+  {% if h.youtube_video_id != blank %}
+    {% assign yt_ids = h.youtube_video_id | split: ' ' %}
+  {% endif %}
+{% endif %}
+
+<h2 class="mt-4">Reading (Goodreads)</h2>
+{% if h.goodreads_user_id != blank %}
+  <div class="mt-2">{% include hobbies-goodreads.liquid %}</div>
+{% else %}
+  {% capture goodreads_block %}
+{% include hobbies-goodreads.liquid %}
+{% endcapture %}
+  {% assign goodreads_trimmed = goodreads_block | strip %}
+  {% if goodreads_trimmed contains 'goodreads.com' %}
+    <div class="mt-3">{{ goodreads_block }}</div>
+  {% else %}
+    <p class="text-muted">
+      Set <code>goodreads_user_id</code> in <code>_data/hobbies.yml</code> (numeric id from your profile URL), or paste widget HTML into <code>_includes/hobbies-goodreads.liquid</code>.
+    </p>
+  {% endif %}
+{% endif %}
+
+<h2 class="mt-5">Spotify</h2>
+{% if h.spotify_album_id != blank %}
+  <div class="row mt-3">
+    <div class="col-12">
+      <iframe
+        title="Spotify album embed"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/album/{{ h.spotify_album_id }}?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+{% else %}
+  <p class="text-muted">
+    Set <code>spotify_album_id</code> in <code>_data/hobbies.yml</code> (the id from an
+    <code>open.spotify.com/album/&hellip;</code> link).
+  </p>
+{% endif %}
+
+<h2 class="mt-5">Cover songs (YouTube)</h2>
+{% if yt_ids and yt_ids.size > 0 %}
+  <div class="row mt-2 gx-2 gy-2">
+    {% for id in yt_ids %}
+      {% assign vid = id | strip %}
+      {% if vid != blank %}
+        {% assign youtube_embed_url = 'https://www.youtube.com/embed/' | append: vid %}
+        <div class="col-6 col-lg-3">
+          {% include video.liquid path=youtube_embed_url class="img-fluid rounded z-depth-1 w-100" max-width="100%" min-height="180" title="YouTube cover" %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% elsif h.youtube_video_id != blank %}
+  {% assign youtube_embed_url = 'https://www.youtube.com/embed/' | append: h.youtube_video_id %}
+  <div class="row mt-3">
+    <div class="col-12 col-lg-10 col-xl-8">
+      {% include video.liquid path=youtube_embed_url class="img-fluid rounded z-depth-1" max-width="100%" min-height="315" title="YouTube cover video" %}
+    </div>
+  </div>
+{% else %}
+  <p class="text-muted">
+    Set <code>youtube_video_ids</code> in <code>_data/hobbies.yml</code> (list of ids, or a single <code>youtube_video_id</code>).
+  </p>
+{% endif %}

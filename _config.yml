@@ -54,7 +54,7 @@ external_services:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false # no site footer; false applies sticky-bottom-footer body class (drops reserved bottom padding)
 search_enabled: true
 socials_in_search: true
 posts_in_search: true

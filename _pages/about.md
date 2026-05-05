@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Incoming M.A.Sc. student at Queen's University
+subtitle: "M.A.Sc. student · Federated Learning · Queen's University"
 email_personal: akmolmasud5@gmail.com
 
 profile:
@@ -10,8 +10,6 @@ profile:
   image: akmol-masud-profile.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Mirpur-13, Dhaka-1206, Bangladesh</p>
-    <p>Incoming at Queen's University, Kingston, Canada</p>
     <p><a href="mailto:m.masud@queensu.ca">m.masud@queensu.ca</a><br><a href="mailto:akmolmasud5@gmail.com">akmolmasud5@gmail.com</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -25,11 +23,10 @@ announcements:
 latest_posts:
   enabled: false
 ---
+I'm **Akmol** — Electrical and Computer Engineering at **Queen's University** (Kingston, Canada), with research focus on **federated learning over wireless networks**.
 
-I'm **Akmol** (Md Akmol Masud) — an incoming M.A.Sc. student in Electrical and Computer Engineering at **Queen's University** (Kingston, Canada), working on **federated learning over wireless networks** under **Dr. Ning Lu**.
+My research sits at the intersection of distributed optimization, split learning, and privacy-preserving ML — with a focus on making collaborative learning work under real-world constraints: heterogeneous devices, limited bandwidth, and non-iid data.
 
-My research is about making collaborative ML work under heterogeneity, communication constraints, and privacy requirements. That means I will mostly focus on **federated and split learning** and **distributed optimization**.
+Previously at **Jahangirnagar University** (B.Sc., ICT), I published work spanning FL, biomedical signal processing, and quantum ML — including papers in TMLR, PLOS ONE, and Biomedical Signal Processing and Control. With that foundation, I'm now investing my time fully in wireless FL.
 
-Before this, I was at **Jahangirnagar University** (B.Sc. in Information and Communication Technology), working across **biomedical AI**, **quantum ML**, and **federated learning**. I've explored quite a few areas; now I'm narrowing in.
-
-I'm always happy to talk research, swap ideas, or explore collaborations — if something resonates, reach out at <a href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a> (Queen's) or <a href="mailto:{{ page.email_personal }}">{{ page.email_personal }}</a>.
+If you have any discussion, idea, or just want a conversation — feel free to reach out. Always happy to connect.

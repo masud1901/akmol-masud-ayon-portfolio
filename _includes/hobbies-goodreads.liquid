@@ -1,0 +1,53 @@
+{% assign g = site.data.hobbies %}
+{% if g.goodreads_user_id != blank %}
+  {% assign gr_uid = g.goodreads_user_id | strip %}
+  {% assign gr_read_n = g.goodreads_read_count | default: 6 %}
+  {% assign gr_profile = g.goodreads_profile_url | strip %}
+  {% if gr_profile == blank %}
+    {% assign gr_profile = 'https://www.goodreads.com/user/show/' | append: gr_uid %}
+  {% endif %}
+  {% assign gr_read_more = g.goodreads_read_shelf_url | strip %}
+  {% if gr_read_more == blank %}
+    {% assign gr_read_more = gr_profile %}
+  {% endif %}
+
+  <div class="goodreads-hobbies">
+    <p class="mb-3">
+      <a href="{{ gr_profile }}" target="_blank" rel="noopener noreferrer">Goodreads profile</a>
+      (shelves update automatically).
+    </p>
+
+    <section class="goodreads-shelf goodreads-shelf--current mb-4">
+      <h3 class="h5 goodreads-shelf-heading">Currently reading</h3>
+      <div id="gr_custom_widget_"></div>
+      <script
+        src="https://www.goodreads.com/review/custom_widget/{{ gr_uid }}.currently?cover_position=left&cover_size=small&num_books=5&order=d&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=0&widget_text_color=363636&widget_title_size=medium&widget_width=wide"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+    </section>
+
+    <section class="goodreads-shelf goodreads-shelf--read mb-2">
+      <h3 class="h5 goodreads-shelf-heading">Read</h3>
+      <div id="gr_grid_widget_"></div>
+      <script
+        src="https://www.goodreads.com/review/grid_widget/{{ gr_uid }}.books?user_id={{ gr_uid }}&shelf=read&num_books={{ gr_read_n }}&sort=date_read&order=d"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+      <div class="goodreads-see-more">
+        <a
+          class="btn btn-sm btn-outline-primary"
+          href="{{ gr_read_more }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >See more on Goodreads</a
+        >
+      </div>
+    </section>
+  </div>
+{% else %}
+  {% comment %}
+    Optional: paste extra Goodreads HTML from Profile → Edit → Widgets below this comment.
+  {% endcomment %}
+{% endif %}

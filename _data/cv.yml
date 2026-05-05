@@ -1,13 +1,13 @@
 cv:
   name: Md Akmol Masud
-  label: Incoming M.A.Sc. Student, Queen's University
+  label: M.A.Sc., Electrical & Computer Engineering — Queen's University
   email: m.masud@queensu.ca
-  location: Kingston, ON, Canada (incoming)
+  location: Kingston, ON, Canada
   image: ""
   summary: >
-    Incoming M.A.Sc. student in Electrical and Computer Engineering at Queen's University,
-    working on federated learning over wireless networks, distributed optimization,
-    and privacy-preserving machine learning for edge AI systems.
+    Federated learning over wireless networks, distributed optimization, and privacy-preserving
+    machine learning for edge AI. M.A.Sc. in Electrical and Computer Engineering at Queen's University
+    (program begins September 2026).
 
   social_networks:
     - network: GitHub
@@ -161,6 +161,6 @@ cv:
         icon: fa-solid fa-flask
         keywords: "Federated Learning, Wireless Edge AI, Privacy-Preserving ML, Distributed Optimization, Quantum ML"
 
-      - name: Reading
-        icon: fa-solid fa-book
-        keywords: "Science fiction, classic literature, philosophy of science"
+      - name: Music & reading
+        icon: fa-solid fa-music
+        keywords: "Cover songs, Spotify, Goodreads; science fiction and philosophy of science"

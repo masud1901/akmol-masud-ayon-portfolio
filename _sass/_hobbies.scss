@@ -1,0 +1,80 @@
+/******************************************************************************
+ * Hobbies page — Goodreads widget layout (injected HTML from Goodreads scripts)
+ ******************************************************************************/
+
+.goodreads-hobbies {
+  /* Goodreads adds its own h2 (“currently”, “books”); we already show section titles. */
+  .gr_custom_header_,
+  #gr_grid_widget_ > h2 {
+    display: none !important;
+  }
+
+  .goodreads-shelf-heading {
+    margin-bottom: 0.75rem;
+  }
+
+  /* custom_widget: stack book blocks in a row */
+  .goodreads-shelf--current .gr_custom_container_ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .goodreads-shelf--current .gr_custom_each_container_ {
+    flex: 0 0 auto;
+    width: 8.75rem;
+    max-width: 46%;
+    text-align: center;
+  }
+
+  .goodreads-shelf--current .gr_custom_book_container_ img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .goodreads-shelf--current .gr_custom_title_,
+  .goodreads-shelf--current .gr_custom_author_ {
+    font-size: 0.8rem;
+    line-height: 1.25;
+    margin-top: 0.2rem;
+  }
+
+  .goodreads-shelf--current .gr_custom_container_ > br {
+    display: none;
+  }
+
+  .goodreads-shelf--current .gr_custom_container_ > center {
+    flex: 0 0 100%;
+    margin-top: 0.35rem;
+  }
+
+  /* grid_widget: cover thumbnails in a row */
+  .goodreads-shelf--read .gr_grid_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .goodreads-shelf--read .gr_grid_book_container img {
+    display: block;
+    width: 72px;
+    max-width: 72px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .goodreads-shelf--read .gr_grid_book_container a {
+    display: block;
+  }
+
+  .goodreads-see-more {
+    margin-top: 0.75rem;
+  }
+}
